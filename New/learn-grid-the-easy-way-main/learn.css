@@ -1,0 +1,52 @@
+/* Variables */
+:root {
+  /* Color's Variable */
+  --clr-primary-400: hsl(263 55% 52%);
+  --clr-secondary-400: hsl(217 19% 35%);
+  --clr-secondary-500: hsl(219 29% 14%);
+  --clr-netural-100: hsl(0 0% 100%);
+  --clr-netural-200: hsl(210 46% 95%);
+  --clr-netural-300: hsl(0 0% 81%);
+
+  /* Font Family */
+  --ff-primary: "Barlow semi Condensed", sans-serif;
+  /* Font Wight */
+  --fw-400: 500;
+  --fw-700: 600;
+  /* Font Size */
+  --fs-300: 0.6875rem; /*11 px*/
+  --fs-400: 0.8125rem; /*13 px*/
+  --fs-500: 1.25rem; /*20 px*/
+}
+
+/* CSS Reseting */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set Scroll Behavior */
+html:focus-within{
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body{
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
