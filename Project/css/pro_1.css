@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.125rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header {
+  position: sticky;
+  top: 0;
+}
+
+/* Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Menu */
+.nav-list {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding: 0 1.625em;
+}
+
+/* Logo */
+.logo {
+  width: fit-content;
+  display: flex;
+  justify-content: center center;
+  /* border: 2px solid red; */
+  align-items: center;
+}
+
+/* Giving Style to Image */
+.logo img {
+  width: 5rem;
+  /* border: 2px solid red; */
+}
+
+/* Style li tag */
+.nav-list li {
+  padding: 0.725rem 1.25rem;
+  list-style: none;
+}
+.nav-list li a:hover {
+  color: gray;
+}
+.nav-list li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* Search Bar */
+.right-nav {
+  text-align: right;
+  width: 30%;
+  padding: 0 1.525rem;
+  margin-bottom: 0.625rem;
+}
+
+/* Style Search bar */
+#search {
+  padding: 0.325rem;
+  border-radius: 10px;
+  border: 1px transparent;
+}
+.background {
+  background: rgba(0, 0, 0, 0.8) url("/Asset/pic4.1.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+/* Styling Search bar end here */
+
+/* Section Styling */
+.firstSection {
+  height: 100vh;
+}
+.box-main {
+  height: 75%;
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.firstHalf {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.secondHalf {
+  width: 30%;
+}
+.secondHalf img {
+  width: 80%;
+  padding: 0.625rem 0;
+  border: 1px solid #7a6b6e;
+  box-shadow: 0 0 2px 1px #ddd;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.big-text {
+  margin-bottom: 0.625rem;
+  font-size: 2.725rem;
+}
+.sm-text {
+  font-size: 1.25rem;
+}
+/* Style Buttons */
+.btn {
+  border: 1px solid #ddd;
+  border-radius: 0.625rem;
+  margin-top: 0.625rem;
+  /* font-size: 1rem; */
+  background: none;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  font-size: 16px;
+}
+/* Style Small Button class */
+.btn-sm {
+  padding: 6px 10px;
+}
+.btn-dark {
+  color: black;
+  border: 2px solid gray;
+}
+
+/* Style Section Right */
+.secRight {
+  font-family: "Times New Roman", Times, serif;
+  height: 31.25rem;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+}
+.section {
+  font-family: "Times New Roman", Times, serif;
+  height: 31.25rem;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+}
+.left {
+  flex-direction: row-reverse;
+}
+
+.paragraphs {
+  /* text-align: center; */
+  /* margin: .625rem 0; */
+  padding: 0 1.5em;
+}
+.thumbnail img {
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+/* Style Contact Form */
+.contact {
+  height: 50vh;
+  /* border: 1px solid red; */
+  background-color: #f6f5f4;
+}
+.text-center {
+  text-align: center;
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form {
+  max-width: 21.875rem;
+  margin: 2rem auto;
+}
+
+.form input {
+  width: 100%;
+  font-size: 1.188rem;
+  border: 2px solid gray;
+  border-radius: 6px;
+  margin: 0.95rem 0;
+  padding: 6px 3px;
+}
+.copyright {
+  color: whitesmoke;
+}
+/* Hamburger Styling */
+.hamb {
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  display: none;
+}
+.hamb-line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 5px;
+}
+
+/* || Adding Media Query And Making it resposive  || */
+@media only screen and (max-width: 762px) {
+  .nav-bar {
+    height: 70px;
+    flex-direction: column;
+  }
+  .nav-list {
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right-nav {
+    opacity: 0;
+    text-align: center;
+  }
+  #search {
+    width: 100%;
+  }
+  .hamb {
+    display: block;
+  }
+  .box-main {
+    flex-direction: column-reverse;
+  }
+  .paragraphs {
+    padding: 0;
+  }
+}

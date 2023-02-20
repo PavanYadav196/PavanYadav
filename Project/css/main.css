@@ -1,12 +1,13 @@
-/* Theming */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-/* Variables */
+/* Creating Utilities Classes */
 :root {
   --white: #f9f9f9;
   --black: #36383f;
   --gray: #85888c;
 }
+
 /* Reset */
 * {
   margin: 0;
@@ -18,72 +19,77 @@ body {
   background-color: var(--white);
   font-family: "Poppins", sans-serif;
 }
+
+/* Clearing the line below text in a */
 a,
 ul {
   text-decoration: none;
   list-style: none;
 }
-
 /* Header */
 .header {
   background-color: var(--black);
-  box-shadow: 1px 1px 5px 0px var(--gray);
   position: sticky;
   top: 0;
+  height: 100%;
+  box-shadow: 1px 1px 5px 0 var(--gray);
   width: 100%;
 }
 /* Logo */
 .logo {
   display: inline-block;
   color: var(--white);
-  font-size: 3.75rem;
+  font-size: 3.725rem;
   margin-left: 0.625rem;
 }
-
 /* Nav menu */
 .nav {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: var(--black);
   overflow: hidden;
+  background: var(--black);
 }
 .menu a {
   display: block;
   padding: 1.875rem;
   color: var(--white);
+  opacity: 1;
 }
+
 .menu a:hover {
   background-color: var(--gray);
+  color: bisque;
+  font-weight: bold;
 }
 .nav {
   max-height: 0;
   transition: max-height 0.5s ease-out;
 }
 
-/* Menu Icon */
+/* Creating Menu Icon */
 .hamb {
-  cursor: pointer;
+  /* border: 1px solid red; */
   float: right;
   padding: 2.5rem 1.25rem;
+  cursor: pointer;
 }
-/* Styling label tag */
+/* Styling Lines */
 .hamb-line {
   background: var(--white);
-  display: block;
   height: 2px;
-  position: relative;
   width: 24px;
+  position: relative;
+  display: block;
 }
-/* Style the span tag */
-.hamb-line::before,
-.hamb-line::after {
+.hamb-line::after,
+.hamb-line::before {
   background: var(--white);
   content: "";
-  display: block;
+  width: 100%;
   height: 100%;
   position: absolute;
-  width: 100%;
+  display: block;
   transition: all 0.2s ease-out;
 }
 .hamb-line::after {
@@ -92,89 +98,86 @@ ul {
 .hamb-line::before {
   top: -5px;
 }
-/* Hide Checkbox */
 .side-menu {
   display: none;
 }
 
-/* Toggle Menu Icon */
+/* Toggle Menu */
 .side-menu:checked ~ nav {
-  max-height: 100%;
+  max-height: 50%;
 }
 .side-menu:checked ~ .hamb .hamb-line {
   background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-  transform: rotate(-45deg);
-  top: 0;
 }
 .side-menu:checked ~ .hamb .hamb-line::after {
   transform: rotate(45deg);
   top: 0;
 }
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
 
-/* Responsiveness */
 @media (min-width: 768px) {
   .nav {
     max-height: none;
-    top: 0;
     position: relative;
-    float: right;
+    top: 0;
     width: fit-content;
-    background-color: transparent;
+    float: right;
+    background: transparent;
   }
   .menu li {
     float: left;
   }
   .menu li:hover {
-    background-color: transparent;
     color: var(--gray);
+    background: transparent;
   }
   .hamb {
     display: none;
   }
 }
-/* Style Card */
+
+/* Style Cards */
 .container {
-  /* border: 1px solid red; */
+  max-width: 999px;
   display: flex;
-  width: 920px;
   height: auto;
   margin: 1.875rem auto;
 }
-/* Styling the box / card */
+
+/* Style box */
 .box {
+  border: 1px solid var(--gray);
   width: 32%;
   height: auto;
-  border: 1px solid #ccc;
   margin-right: 1%;
   margin-top: 1rem;
-  background: white;
   border-radius: 10px;
+  background: white;
   transition: 0.9;
-  padding: 0.525rem;
+  padding: 0.625rem;
 }
 .box:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
   cursor: pointer;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
 }
-/* Making image resposive */
-img {
+img,
+picture {
   width: 100%;
-  border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 h3,
 p {
   text-align: center;
-  color: rgb(104, 92, 92);
 }
 p {
-  font-size: 0.938rem;
+  font-size: 0.983rem;
   padding: 0 5px;
-}
-
-@media (max-width: 800px) {
+}   
+@media (min-width: 800px) {
   .container {
     width: 100%;
   }
