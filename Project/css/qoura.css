@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400,500,600,700&display=swap");
+
+:root {
+  --qoura-primary: rgb(185, 43, 39);
+  --qoura-secondary: #636466;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background-holder {
+  display: flex;
+  background: url("/Asset/-4-ans_frontend_assets.webp");
+  height: 100vh;
+  /* background-clip: border-box; */
+  background-size: cover;
+}
+
+.box {
+  /* border: 2px solid red; */
+  width: 45%;
+  height: 560px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 5px;
+}
+/* Styling head text*/
+.head {
+  /* display: flex;/nter; */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.head h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--qoura-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.head p {
+  color: var(--qoura-secondary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.divide {
+  display: flex;
+  justify-content: space-evenly;
+  /* display: grid
+  grid-template-columns: 1fr 1fr; */
+  /* gap: 2rem; */
+  /* margin-top: 2rem; */
+  box-sizing: border-box;
+  /* border-right: 2px solid; */
+  /* border: 1px solid red; */
+  /* display: none; */
+}
+
+.left {
+  width: 50%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: -1rem;
+  /* box-sizing: border-box; */
+}
+
+/* Styling text */
+.left .text-sm {
+  margin-left: 1rem;
+  /* margin-top: 0.5rem; */
+  color: var(--qoura-secondary);
+  font-size: 14px;
+  font-weight: 400;
+}
+.text-sm a {
+  text-decoration: none;
+}
+
+/* Stylig Buttons */
+.left .btn-group {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 0.5rem;
+}
+.left .btn-group button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 6px;
+  text-align: left;
+  background: none;
+  /* font-size: 1rem; */
+  font-weight: 400;
+  border: 1px solid #ddd;
+}
+.btn-group button span {
+  font-size: 1.25rem;
+  text-align: left;
+  margin-right: 0.725rem;
+}
+
+.vertical-align {
+  margin-top: 0.5rem;
+}
+
+.vertical-align a {
+  color: var(--qoura-secondary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+/* Styling right side */
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+/* .form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+} */
+label {
+  display: block;
+  /* margin: 12px 0; */
+}
+h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1.5rem; */
+}
+input {
+  margin: 15px 0;
+  /* margin: 0.725rem 0; */
+  /* padding: 0; */
+  max-width: 90%;
+}
+
+input[type="text"] {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  color: var(--qoura-secondary);
+  /* padding-inline: 2rem; */
+  padding: 0.5rem 0.5rem;
+}
+/* .border{
+  border: 2px solid red;
+  width: 25px;
+  transform:rotate(90deg);
+} */
+.right .btn-group {
+  display: flex;
+  margin: -15px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right .btn-group :nth-child(1) {
+  text-decoration: none;
+  color: var(--qoura-secondary);
+  font-size: 14px;
+}
+.right .btn-group :nth-child(2) {
+  text-decoration: none;
+  margin-right: 2rem;
+  background-color: #43a8ae;
+  padding: 8px 16px;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 100px;
+}
+
+.divider {
+  margin-top: 3rem;
+}

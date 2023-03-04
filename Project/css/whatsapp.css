@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(230, 255, 218);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+  /* border: 1px solid red; */
+}
+
+/* Logo */
+.logo {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  font-size: 1.5rem;
+  width: 8rem;
+  font-weight: 600;
+  direction: ltr;
+  margin-left: 2rem;
+}
+
+/* Styling the navbar */
+.navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+  margin-right: -10rem;
+}
+.navlist li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+.navlist a {
+  font-size: 1rem;
+  color: rgb(28, 33, 30);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navlist a:hover {
+  border-bottom: 1px solid rgba(37, 211, 102, 1);
+  border-bottom-width: 2px;
+  transition: all 0.1s ease-out;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  /* border: 1px solid red; */
+  margin-right: 2.5rem;
+}
+.right-nav a {
+  font-size: 1rem;
+  color: rgb(28, 33, 30);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+  display: flex;
+  gap: 0.725rem;
+  background: rgba(37, 211, 102, 1);
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+}
+.btn span,
+svg {
+  background: none;
+}

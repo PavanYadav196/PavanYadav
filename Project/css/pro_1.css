@@ -214,6 +214,9 @@ body {
   height: 4px;
   margin: 5px 5px;
 }
+.btn .btn-dark{
+  width: 2rem;
+}
 
 /* || Adding Media Query And Making it resposive  || */
 @media only screen and (max-width: 762px) {

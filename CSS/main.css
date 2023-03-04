@@ -17,6 +17,7 @@
 body {
   background-color: var(--white);
   font-family: "Poppins", sans-serif;
+  background: rgba(37, 211, 102);
 }
 a,
 ul {
@@ -151,7 +152,7 @@ ul {
   margin-top: 1rem;
   background: white;
   border-radius: 10px;
-  transition: 0.9;
+  transition: 0.9s;
   padding: 0.525rem;
 }
 .box:hover {

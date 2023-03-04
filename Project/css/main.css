@@ -24,6 +24,7 @@ body {
 a,
 ul {
   text-decoration: none;
+
   list-style: none;
 }
 /* Header */
@@ -176,7 +177,7 @@ p {
 p {
   font-size: 0.983rem;
   padding: 0 5px;
-}   
+}
 @media (min-width: 800px) {
   .container {
     width: 100%;
