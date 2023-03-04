@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
   background-color: rgb(230, 255, 218);
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -27,6 +30,7 @@ header {
   font-weight: 600;
   direction: ltr;
   margin-left: 2rem;
+  background: none;
 }
 
 /* Styling the navbar */
@@ -74,8 +78,107 @@ a {
   border: 1px solid black;
   padding: 1rem 2rem;
   border-radius: 30px;
+  position: relative;
+  overflow: hidden;
 }
 .btn span,
 svg {
   background: none;
+}
+.btn:hover {
+  background-color: #000;
+  color: whitesmoke;
+  transition: 0.5s ease-in-out;
+}
+
+.download-section {
+  /* margin-top: 2rem; */
+  max-width: 1024px;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+  gap: 10rem;
+}
+
+.download-header {
+  width: 50%;
+  display: flex;
+  margin-left: -2rem;
+}
+.download-para {
+  width: 50%;
+  display: flex;
+  /* justify-content:start; */
+  align-items: flex-start;
+  gap: 2rem;
+  flex-direction: column;
+}
+.download-para p:nth-child(1) {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-stretch: condensed; */
+}
+.download-para p:nth-child(2) {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.download-header h1 {
+  /* display: flex; */
+  /* flex-direction: column; */
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.cards-container {
+  /* background: rgb(28, 33, 30); */
+  display: flex;
+  justify-content: center;
+  max-width: 920px;
+  margin: 0 auto;
+  border: 1px solid red;
+  /* background: rgb(28, 33, 30); */
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 20px;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+  height: 350px;
+  background: rgb(17, 27, 33);
+}
+.card:hover{
+background: rgba(37, 211, 102, 1);
+transition: .001s ease-out;
+color: black;
+}
+.card .text{
+  display: flex;
+  flex-direction: column;
+  /* justify-content:space-between; */
+
+  align-items: center;
+}
+
+.img-hold img {
+  display: block;
+  /* border: 1px solid red; */
+  width: 150px;
+  background-color: none;
+}
+
+#icon {
+  width: 180px;
+  margin: none;
+  display: block;
+  padding: none;
 }
