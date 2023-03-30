@@ -1,0 +1,21 @@
+@media screen and (min-width: 1020px) {
+  .header {
+    border: 2px solid red;
+    position: relative;
+  }
+  .navbar {
+    /* border: 2px solid red; */
+    /* position: relative; */
+    overflow: visible;
+  }
+  .nav-list {
+    position: absolute;
+    width: 764px;
+    bottom: 8.5rem;
+    left: -9.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+  }
+}

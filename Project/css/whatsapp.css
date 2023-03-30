@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: rgb(230, 255, 218);
   font-family: "Poppins", sans-serif;
@@ -23,6 +24,7 @@ body {
   z-index: 10;
   /* border: 1px solid red; */
 }
+
 .header:-webkit-scrollbar {
   border-bottom: 1px solid #ddd;
 }
@@ -52,30 +54,33 @@ body {
   gap: 2.8rem;
   margin-right: -10rem;
 }
+
 .navlist li,
 a {
   text-decoration: none;
   list-style: none;
 }
-.navlist a {
-  font-size: 1rem;
-  color: rgb(28, 33, 30);
-  font-family: Arial, Helvetica, sans-serif;
-  animation: border_ani 2s linear forwards;
+
+.navlist li a {
+  position: relative;
+  /* font-size: 18px; */
+  letter-spacing: 0.5px;
+  color: #111b21;
 }
 
-.navlist a:hover {
-  border-bottom: 1px solid rgba(37, 211, 102, 1);
-  border-bottom-width: 2px;
-  /* transition: all 0.1s ease-out; */
+.navlist li a::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  background: rgba(37, 211, 102, 1);
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s ease-in-out;
+  transition: .3s;
 }
-@keyframes border_ani {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
+
+a:hover::after {
+  width: 100%;
 }
 
 .right-nav {
@@ -86,11 +91,13 @@ a {
   /* border: 1px solid red; */
   margin-right: 2.5rem;
 }
+
 .right-nav a {
   font-size: 1rem;
   color: rgb(28, 33, 30);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .btn {
   display: flex;
   gap: 0.725rem;
@@ -101,10 +108,12 @@ a {
   position: relative;
   overflow: hidden;
 }
+
 .btn span,
 svg {
   background: none;
 }
+
 .btn:hover {
   background-color: #000;
   color: whitesmoke;
@@ -127,6 +136,7 @@ svg {
   display: flex;
   margin-left: -2rem;
 }
+
 .download-para {
   width: 50%;
   display: flex;
@@ -140,11 +150,13 @@ svg {
   text-decoration: underline;
   color: #000;
 }
+
 .download-para p:nth-child(1) {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   /* font-stretch: condensed; */
 }
+
 .download-para p:nth-child(2) {
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
@@ -184,11 +196,13 @@ svg {
   height: 370px;
   background: rgb(17, 27, 33);
 }
+
 .card:hover {
   background: rgba(37, 211, 102, 1);
   transition: 0.001s ease-out;
   color: rgb(24, 24, 24);
 }
+
 .card .text {
   display: flex;
   flex-direction: column;
@@ -197,14 +211,17 @@ svg {
   font-weight: 400;
   gap: 1rem;
 }
+
 .text h6 {
   margin-top: 2rem;
   font-weight: 400;
 }
+
 .text h3 {
   font-size: 48px;
   font-weight: 400;
 }
+
 .text p {
   font-size: 12px;
   line-height: 16px;
@@ -221,6 +238,7 @@ svg {
   justify-content: center;
   align-items: center;
 }
+
 .img-card img {
   display: block;
   /* border: 1px solid red; */
@@ -234,15 +252,18 @@ svg {
   margin-bottom: 1.8rem;
   /* border: 1px solid red; */
 }
+
 .footer-end {
   font-size: 1.15rem;
   text-align: center;
   margin: 2.5rem auto;
 }
+
 .footer-end a {
   text-decoration: underline;
   color: black;
 }
+
 /* ==============================================End Of First Section ============================================= */
 
 /*============================================== Styling second section starts from here! ================================*/
@@ -257,6 +278,7 @@ svg {
   border-bottom-right-radius: 40px;
   /* border: 2px solid red; */
 }
+
 .container {
   display: flex;
   max-width: 1040px;
@@ -277,6 +299,7 @@ svg {
   justify-content: space-around;
   /* width: 40%; */
 }
+
 .alr-text {
   display: flex;
   flex-direction: column;
@@ -290,6 +313,7 @@ svg {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.9);
 }
+
 .alr-text p {
   font-size: 1.1rem;
 }
@@ -318,6 +342,7 @@ svg {
   color: whitesmoke;
   transition: all 0.1s ease-out;
 }
+
 /* ===================================================== Already Section End ================================================= */
 
 /* =====================================================Styling cards of the already section=================================== */
@@ -345,6 +370,7 @@ svg {
   width: 330px;
   height: 250px;
 }
+
 .card-image_1 #im-1 {
   width: 100%;
   background: none;
@@ -361,23 +387,38 @@ svg {
   z-index: 10;
   /* border: 2px solid red; */
 }
+
 .card-content {
   display: flex;
   flex-direction: column;
   gap: 0.725rem;
 }
+
 .card-content h2 {
   font-weight: 400;
   font-size: 30px;
 }
-.learn-more span {
+
+.learn-more a {
   display: flex;
-  margin-right: 1rem;
-  /* border-bottom: 3px solid rgba(37, 211, 102, 1); */
-  border-bottom-width: 3px;
-  /* border-bottom-style: ; */
-  /* transform:rotate(90deg); */
+  font-size: 1rem;
+  color: black;
 }
+
+.learn-more a .rm-5 {
+  display: block;
+  margin-left: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.learn-more a span:first-child {
+  border-bottom: 3px solid rgba(37, 211, 102, 1);
+}
+
+.learn-more a:hover {
+  color: rgba(37, 211, 102, 1);
+}
+
 /* ====================================================Styling the footer start from here=========================== */
 .footer {
   min-height: 504px;
@@ -386,6 +427,7 @@ svg {
   border: 1px solid red;
   margin-bottom: 2rem;
 }
+
 .footer .container {
   display: flex;
   justify-content: space-around;
@@ -403,20 +445,20 @@ svg {
   flex-direction: column;
   /* gap:  4rem; */
   justify-content: space-around;
-  
 }
+
 .footer-holder img {
   width: 100%;
   filter: invert(1) brightness(10);
   color: white;
 }
 
-.btn-footer span{
+.btn-footer span {
   text-decoration: none;
   color: #222;
 }
 
-.footer-holder-2{
+.footer-holder-2 {
   display: flex;
   justify-content: space-around;
   height: 270px;
@@ -424,11 +466,12 @@ svg {
   color: whitesmoke;
 }
 
-.footer-holder-2 h4{
+.footer-holder-2 h4 {
   font-size: 12px;
   font-weight: 400;
 }
-.footer-holder-2 h3{
+
+.footer-holder-2 h3 {
   font-size: 1.15rem;
   font-weight: 400;
 }
