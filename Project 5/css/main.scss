@@ -1,0 +1,281 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Poppins:wght@100;400;700;800;900&family=Roboto&display=swap");
+
+//================================================================
+// Variables
+//================================================================
+
+$background-primary: #131313;
+$nav-color-primary: #000;
+$main-color: #33a9dc;
+$secondary-color: #4c83ff;
+$bg-gradient: linear-gradient(
+  160deg,
+  var(--main-color),
+  var(--secondary-color)
+);
+
+$bg-gradient-hover: linear-gradient(
+  160deg,
+  var(--secondary-color),
+  var(--main-color)
+);
+$bg-gradient-rainbow: linear-gradient(
+  292.46deg,
+  #27ae60 17.79%,
+  #2f80ed 35.92%,
+  #9b51e0 54.06%,
+  #eb5757 71.08%,
+  #f2994a 87.36%
+);
+$main-font: "Poppins", sans-serif;
+
+// ================================================================
+// Default Styling
+// ================================================================
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $main-font;
+  background: #131313;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+//================================================================
+// Header Section starts here
+//================================================================
+.header {
+  position: sticky;
+  top: 0;
+  transition: 0.4s ease;
+  scroll-behavior: smooth;
+  // bottom: 0;
+  border-bottom: 2px solid #131313;
+}
+
+// =====================================================================
+// Container - Making width 786px
+// =====================================================================
+.container {
+  max-width: 935px;
+  width: 100%;
+  margin: 0 auto;
+  height: calc(265px - 50px - 100%);
+}
+
+.nav-container {
+  max-height: 50px;
+  background: $background-primary;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-size: 15px;
+
+  .logo {
+    margin-left: 1rem;
+    margin-top: -0.5rem;
+  }
+  .navbar {
+    display: flex;
+    gap: 1.5rem;
+    margin-inline: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+
+    .navlist {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      display: block;
+      margin: 0;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      transition: 0.4s ease;
+      color: rgb(121, 121, 121);
+    }
+    a:hover {
+      color: white;
+    }
+
+    .str_code {
+      border: 1px solid #33a9dc;
+      border-radius: 2px;
+      padding: 0.4rem 1.12rem;
+      background: $main-color;
+      color: rgba(255, 249, 249, 0.89);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .login {
+      padding: 0.3rem 0.875rem;
+      border: 1px solid #656565;
+      background: #000;
+      color: white;
+      border-radius: 2px;
+      font-weight: 400;
+    }
+    .search {
+      width: 45px;
+      height: 35px;
+      border-radius: 2px;
+      background: #000;
+      border: 1px solid #656565;
+    }
+  }
+}
+//================================================================
+// Header Section end here
+//================================================================
+
+// ==================================================================
+// # Footer
+// ==================================================================
+.footer {
+  min-height: 256px;
+  background: #1f1f1f;
+  height: 100%;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+  }
+  .footer_sec_1,
+  .footer_sec_2,
+  .footer_sec_3 {
+    margin-top: 3rem;
+  }
+  .footer_sec_1 {
+    display: flex;
+    flex-direction: column;
+    .socials {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+  .footer_sec_2 {
+    color: white;
+    font-size: 14px;
+
+    .footer_heading {
+      text-transform: uppercase;
+      color: #9b9b9b;
+      margin-bottom: 0.5rem;
+    }
+    .lists {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+  }
+  .footer_sec_3 {
+    color: white;
+
+    .contact {
+      background: $bg-gradient-rainbow;
+      color: transparent;
+      font-weight: 700;
+      background-clip: text;
+    }
+  }
+}
+// ======================================================================
+// footer section ends
+// ======================================================================
+
+// ======================================================================
+// Main Section Start
+// ======================================================================
+.wrapper {
+  background: #131313;
+  .container {
+    margin-top: 5rem;
+    .section-1 {
+      text-align: center;
+      background: #131313;
+      .heading {
+        font-size: 4em;
+        padding: 3rem;
+        line-height: 1.5;
+        color: transparent;
+        background: $bg-gradient-rainbow;
+        background-clip: text;
+        font-weight: bold;
+        letter-spacing: -1px;
+        word-spacing: -0.2px;
+        margin-top: -2rem;
+      }
+      .para {
+        margin-top: -1rem;
+        font-size: 1.65rem;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .img-content {
+        color: white;
+        font-size: 1.25rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// ================================================================
+// Section 2 Of Main
+// ================================================================
+.section-2 {
+  margin-top: 2rem;
+  color: white;
+  .wrapper {
+    display: flex;
+    gap: 1rem;
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .heading {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// ================================================================
+// Section 3 Of Main
+// ================================================================
+.section-3 {
+  margin-top: 5rem;
+  color: rgba(255, 255, 255, 0.872);
+  margin-bottom: 5rem;
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    &-content .title {
+      text-transform: uppercase;
+    }
+  }
+}
