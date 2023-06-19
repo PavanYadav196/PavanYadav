@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.wrapper {
+  background: #eafaf1;
+}
+.wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 13rem;
+  min-width: 100%;
+}
+.wrapper .header .nav {
+  display: flex;
+}
+.wrapper .header .nav__bar {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  list-style: none;
+}
+.wrapper .header .nav__link {
+  color: #00ad6a;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.wrapper .header .nav__link:hover {
+  color: #080c16;
+}
+.wrapper .header .nav .signup {
+  border: 2px solid #00ad6a;
+  padding: 0.4rem 1rem;
+}
+.wrapper .header .nav .active {
+  color: #080c16;
+}/*# sourceMappingURL=main.css.map */

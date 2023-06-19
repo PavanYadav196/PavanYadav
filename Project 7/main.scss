@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  .h1 {
+    font-size: 13rem;
+    background: url("../Asset/space.jpg");
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+  }
+  .h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 0.925rem;
+    line-height: 1.5;
+    padding: 0 25px;
+  }
+  .btn {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: transparent;
+    background: rgb(43, 43, 247);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+  }
+}

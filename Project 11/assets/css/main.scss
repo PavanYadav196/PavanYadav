@@ -1,0 +1,70 @@
+// max-height:960px , 112
+$base-color: #161616;
+$primary-color: #000000;
+$input-color: #121212;
+$btn-color: #1ed760;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  background: $primary-color;
+  width: 100%;
+  height: 100vh;
+
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+  .spotify-header {
+    color: wheat;
+    .logo svg {
+      width: 90px;
+      height: 110px;
+    }
+  }
+  h1 {
+    font-size: 1.875rem;
+    color: white;
+    font-family: 700;
+    word-wrap: 1px;
+    letter-spacing: -0.25px;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: .5rem;
+    .btn {
+      display: flex;
+      color: whitesmoke;
+      font-weight: 550;
+      text-decoration: none;
+      align-items: center;
+      border: 1px solid #6c6c6c;
+      padding: 0.75rem;
+      border-radius: 50px;
+      transition: 0.2s ease;
+      &:hover {
+        border: 1px solid #fff;
+      }
+      img {
+        margin-left: 1rem;
+      }
+      span {
+        text-align: center;
+        margin: auto;
+      }
+    }
+  }
+  .bar {
+    width: 100%;
+    height: 0.25px;
+    background-color: #8f8f8f60;
+    margin-top: 2.5rem;
+  }
+}

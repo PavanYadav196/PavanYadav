@@ -1,0 +1,56 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$base-color: #00ad6a;
+$primary: #1fe374;
+$text-color: #080c16;
+$secondary-color: #d6dae5;
+$default: #eafaf1;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.wrapper {
+  background: $default;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 13rem;
+    min-width: 100%;
+
+    .nav {
+      display: flex;
+      &__bar {
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        // border: 1px solid red;
+        list-style: none;
+      }
+      &__link {
+        color: $base-color;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        &:hover {
+          color: $text-color;
+        }
+      }
+      .signup {
+        border: 2px solid $base-color;
+        padding: 0.4rem 1rem;
+      }
+      .active {
+        color: $text-color;
+      }
+    }
+  }
+}
